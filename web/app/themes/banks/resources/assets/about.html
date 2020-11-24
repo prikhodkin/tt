@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Персональный подбор кредита">
+  <meta name="keywords" content="key1, key2, key3">
+  <title>Персональный подбор кредита</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png" data-mce-href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png" data-mce-href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png" data-mce-href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png" data-mce-href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png" data-mce-href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png" data-mce-href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png" data-mce-href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png" data-mce-href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png" data-mce-href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32" data-mce-href="/favicon-32x32.png">
+<link rel="icon" type="image/png" href="img/favicons/android-chrome-192x192.png" sizes="192x192" data-mce-href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96" data-mce-href="/favicon-96x96.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16" data-mce-href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="img/favicons//mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/general.min.js" defer></script>
+  <link rel="preload" href="fonts/Gilroy-Bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Extrabold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Light.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Semibold.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<header class="header header--no-js">
+  <a href="#" class="header__logo logo">
+    <picture class="logo__img">
+      <source type="image/webp" srcset="img/logo.webp">
+      <img width="145" src="img/logo.png" alt="logo">
+    </picture>
+  </a>
+  <nav class="header__menu menu" data-controller="menu">
+    <button class="menu__burger burger burger" data-target="menu.burger">
+      <span class="burger__inner">Открыть меню</span>
+    </button>
+    <ul class="menu__list" data-target="menu.list">
+      <li class="menu__item"><a href="#">Главная</a></li>
+      <li class="menu__item menu__item--parent">
+        <p>
+          <a href="#">Вклады</a>
+          <svg width="6" height="11" data-target="menu.trigger">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow"></use>
+          </svg>
+        </p>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="#">Ссылка № 1</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 2</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 3</a></li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item--parent">
+        <p>
+          <a href="#">Кредиты</a>
+          <svg width="6" height="11" data-target="menu.trigger">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow"></use>
+          </svg>
+        </p>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="#">Ссылка № 1</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 2</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 3</a></li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item--parent">
+        <p>
+          <a href="#">Ипотека</a>
+          <svg width="6" height="11" data-target="menu.trigger">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow"></use>
+          </svg>
+        </p>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="#">Ссылка № 1</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 2</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 3</a></li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item--parent">
+        <p>
+          <a href="#">Займы</a>
+          <svg width="6" height="11" data-target="menu.trigger">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow"></use>
+          </svg>
+        </p>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="#">Ссылка № 1</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 2</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 3</a></li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item--parent">
+        <p>
+          <a href="#">Карты</a>
+          <svg width="6" height="11" data-target="menu.trigger">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow"></use>
+          </svg>
+        </p>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="#">Ссылка № 1</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 2</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <a href="#" class="header__location location">
+    <svg width="20" height="20">
+      <use xlink:href="img/sprites/sprite.svg#icon__pin"></use>
+    </svg>
+    <span>Россия</span>
+  </a>
+  <button class="header__search" aria-label="Поиск">
+    <svg width="20" height="20">
+      <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
+    </svg>
+  </button>
+</header>
+
+<main>
+  <div class="accent">
+    <div class="bg">
+      <div class="breadcrumbs">
+  <ul class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="#" itemprop="item">
+        <span itemprop="name">Главная</span>
+        <meta itemprop="position" content="1" />
+      </a>
+    </li>
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="#" itemprop="item">
+        <span itemprop="name">О банке</span>
+        <meta itemprop="position" content="2" />
+      </a>
+    </li>
+    <li class="breadcrumbs__item breadcrumbs__item--current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <div itemprop="item">
+        <span itemprop="name">Текущая страница</span>
+        <meta itemprop="position" content="3" />
+      </div>
+    </li>
+  </ul>
+</div>
+
+      <section class="about">
+        <h1 class="about__title title">Займы в Название банка</h1>
+        <p class="about__desc">Микрофинансовая организация Кредит плюс предлагает физлицам оформить срочный займ размером до 30 тыс. рублей под выгодную ставку. Деньги зачисляются на карточку, текущий счет или через систему денежных переводов. Надежность компании подтверждает Центробанк, присвоивший Creditplus статус МФК в 2015 году.</p>
+        <ul class="about__categories">
+          <li class="about__category about__category--active"><a href="#">Кредиты</a></li>
+          <li class="about__category"><a href="#">Займы</a></li>
+          <li class="about__category"><a href="#">Кредитные карты</a></li>
+          <li class="about__category"><a href="#">Ипотека</a></li>
+          <li class="about__category"><a href="#">Автокредиты</a></li>
+          <li class="about__category"><a href="#">Дебетовые карты</a></li>
+          <li class="about__category"><a href="#">Офисы</a></li>
+          <li class="about__category"><a href="#">Банкоматы</a></li>
+          <li class="about__category"><a href="#">Рейтинги</a></li>
+          <li class="about__category"><a href="#">Курсы валют</a></li>
+        </ul>
+        <div class="about__inner">
+          <div class="about__left">
+            <div class="about__count count selection">
+              <p class="count__title name">Посчитать переплату</p>
+              <div class="count__inner">
+                <label class="selection__label" data-controller="range" data-range-start="350000" data-range-max="10000000">
+                  <span class="selection__header">Сума займа, ₽</span>
+                  <input type="text" data-target="range.input" value="350 000">
+                  <span class="selection__range" data-target="range.target"></span>
+                </label>
+                <label class="selection__label">
+                  <span class="selection__header">Срок,дн</span>
+                  <input type="text" class="input" value="10">
+                </label>
+              </div>
+            </div>
+            <div class="about__offers offers">
+              <p class="offers__title title">Выгодные предложения</p>
+              <div class="offers__inner">
+                <ul class="offers__labels">
+                  <li class="offers__label">Сумма</li>
+                  <li class="offers__label">Ставка в день</li>
+                  <li class="offers__label">Срок</li>
+                  <li class="offers__label">Переплата</li>
+                </ul>
+                <ul class="offers__list">
+                  <li class="offers__item">
+                    <div class="offers__top">
+                      <div class="offers__sum">
+                        <p class="offers__price">15 000 ₽</p>
+                        <span class="offers__accent">Заем под 0%</span>
+                      </div>
+                      <div class="offers__overpayment">
+                        <span class="offers__label">Переплата</span>
+                        <span class="offers__text">4500 ₽</span>
+                      </div>
+                      <div class="offers__time">
+                        <span class="offers__label">Срок</span>
+                        <span class="offers__text">30 дн.</span>
+                      </div>
+                      <div class="offers__percent">
+                        <span class="offers__label">Ставка в день</span>
+                        <span class="offers__text">1 %</span>
+                      </div>
+                    </div>
+                    <a href="" class="offers__button button button--accent">Подать заявку</a>
+                  </li>
+                  <li class="offers__item">
+                    <div class="offers__top">
+                      <div class="offers__sum">
+                        <p class="offers__price">15 000 ₽</p>
+                        <span class="offers__accent">Заем под 0%</span>
+                      </div>
+                      <div class="offers__overpayment">
+                        <span class="offers__label">Переплата</span>
+                        <span class="offers__text">4500 ₽</span>
+                      </div>
+                      <div class="offers__time">
+                        <span class="offers__label">Срок</span>
+                        <span class="offers__text">30 дн.</span>
+                      </div>
+                      <div class="offers__percent">
+                        <span class="offers__label">Ставка в день</span>
+                        <span class="offers__text">1 %</span>
+                      </div>
+                    </div>
+                    <a href="" class="offers__button button button--accent">Подать заявку</a>
+                  </li>
+                  <li class="offers__item">
+                    <div class="offers__top">
+                      <div class="offers__sum">
+                        <p class="offers__price">15 000 ₽</p>
+                        <span class="offers__accent">Заем под 0%</span>
+                      </div>
+                      <div class="offers__overpayment">
+                        <span class="offers__label">Переплата</span>
+                        <span class="offers__text">4500 ₽</span>
+                      </div>
+                      <div class="offers__time">
+                        <span class="offers__label">Срок</span>
+                        <span class="offers__text">30 дн.</span>
+                      </div>
+                      <div class="offers__percent">
+                        <span class="offers__label">Ставка в день</span>
+                        <span class="offers__text">1 %</span>
+                      </div>
+                    </div>
+                    <a href="" class="offers__button button button--accent">Подать заявку</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="about__application application">
+              <p class="application__title name">Онлайн-заявка на займ</p>
+              <form action="#" class="application__form">
+                <ul class="application__list">
+                  <li class="application__item">
+                    <input type="text" class="input" placeholder="ФИО" required>
+                  </li>
+                  <li class="application__item">
+                    <input type="text" class="input" placeholder="Мобильный телефон *" required>
+                  </li>
+                  <li class="application__item">
+                    <input type="text" class="input" placeholder="Желаемая сумма займа *" required>
+                  </li>
+                  <li class="application__item">
+                    <input type="text" class="input" placeholder="Адресс проживания *" required>
+                  </li>
+                  <li class="application__item">
+                    <input type="text" class="input" placeholder="Дата рождения *" required>
+                  </li>
+                  <li class="application__item">
+                    <input type="text" class="input" placeholder="Электронная почта *" required>
+                  </li>
+                  <li class="application__item">
+                    <input type="text" class="input" placeholder="Наличие автомобиля *" required>
+                  </li>
+                  <li class="application__item">
+                    <label class="application__label">
+                      <input type="checkbox">
+                      <span class="application__checkbox"></span>
+                      <span class="application__text">Я принимаю <a href="#">условия передачи информации</a></span>
+                    </label>
+                  </li>
+                </ul>
+                <button class="application__button button button--accent">Получить деньги</button>
+              </form>
+            </div>
+          </div>
+          <div class="about__right">
+            <div class="about__card card">
+              <picture class="card__img">
+                <source type="image/webp" srcset="img/tinkoffbank@desktop.webp">
+                <img width="201" height="78" src="img/tinkoffbank@desktop.png" alt="tinkoff">
+              </picture>
+              <ul class="card__list">
+                <li class="card__item">
+                  <p class="card__text">Сайт:</p>
+                  <p class="card__text"><a href="#">creditplus.ru</a></p>
+                </li>
+                <li class="card__item">
+                  <p class="card__text">Телефоны:</p>
+                  <p class="card__text"><a href="#">Показать</a></p>
+                </li>
+                <li class="card__item">
+                  <p class="card__text">Номер лицензии:</p>
+                  <p class="card__text">004402 <br>от 13.05.2015 года</p>
+                </li>
+                <li class="card__item">
+                  <p class="card__text">ИНН:</p>
+                  <p class="card__text">7715450868</p>
+                </li>
+                <li class="card__item">
+                  <p class="card__text">График рассмотрения заявок:</p>
+                  <p class="card__text">Круглосуточно</p>
+                </li>
+                <li class="card__item">
+                  <p class="card__text">ОГРН:</p>
+                  <p class="card__text">1157746230730</p>
+                </li>
+                <li class="card__item">
+                  <p class="card__text">Регистрационный номер:</p>
+                  <p class="card__text">651503045006452</p>
+                </li>
+              </ul>
+            </div>
+            <div class="about__place info-card">
+              <ul class="info-card__list">
+                <li class="info-card__item">
+                  <p class="info-card__text">Потребительские кредиты</p>
+                  <p class="info-card__text">4</p>
+                </li>
+                <li class="info-card__item">
+                  <p class="info-card__text">Вклады</p>
+                  <p class="info-card__text">9</p>
+                </li>
+                <li class="info-card__item">
+                  <p class="info-card__text">Кредитные карты</p>
+                  <p class="info-card__text">1</p>
+                </li>
+                <li class="info-card__item">
+                  <p class="info-card__text">Дебетовые карты</p>
+                  <p class="info-card__text">21</p>
+                </li>
+              </ul>
+            </div>
+            <div class="about__place info-card">
+              <ul class="info-card__list">
+                <li class="info-card__item">
+                  <p class="info-card__text">Финансовый рейтинг</p>
+                  <p class="info-card__text">42 место</p>
+                </li>
+                <li class="info-card__item">
+                  <p class="info-card__text">Народный рейтинг</p>
+                  <p class="info-card__text">9 место</p>
+                </li>
+              </ul>
+            </div>
+            <div class="about__place info-card">
+              <ul class="info-card__list">
+                <li class="info-card__item">
+                  <p class="info-card__text">Банкомат №1</p>
+                  <p class="info-card__text">ул. Пушкина 32</p>
+                </li>
+                <li class="info-card__item">
+                  <p class="info-card__text">Банкомат №1</p>
+                  <p class="info-card__text">ул. Пушкина 32</p>
+                </li>
+                <li class="info-card__item">
+                  <p class="info-card__text">Банкомат №1</p>
+                  <p class="info-card__text">ул. Пушкина 32</p>
+                </li>
+                <li class="info-card__item">
+                  <p class="info-card__text">Банкомат №1</p>
+                  <p class="info-card__text">ул. Пушкина 32</p>
+                </li>
+              </ul>
+            </div>
+            <div class="about__place info-card">
+              <ul class="info-card__list">
+                <li class="info-card__item">
+                  <p class="info-card__text">Офис №1</p>
+                  <p class="info-card__text">ул. Пушкина 32</p>
+                </li>
+                <li class="info-card__item">
+                  <p class="info-card__text">Офис №1</p>
+                  <p class="info-card__text">ул. Пушкина 32</p>
+                </li>
+                <li class="info-card__item">
+                  <p class="info-card__text">Офис №1</p>
+                  <p class="info-card__text">ул. Пушкина 32</p>
+                </li>
+                <li class="info-card__item">
+                  <p class="info-card__text">Офис №1</p>
+                  <p class="info-card__text">ул. Пушкина 32</p>
+                </li>
+              </ul>
+            </div>
+            <div class="about__place info-card">
+              <ul class="info-card__list">
+                <li class="info-card__item">
+                  <p class="info-card__text">Банкомат №1</p>
+                  <p class="info-card__text">ул. Пушкина 32</p>
+                </li>
+                <li class="info-card__item">
+                  <p class="info-card__text">Банкомат №1</p>
+                  <p class="info-card__text">ул. Пушкина 32</p>
+                </li>
+                <li class="info-card__item">
+                  <p class="info-card__text">Банкомат №1</p>
+                  <p class="info-card__text">ул. Пушкина 32</p>
+                </li>
+                <li class="info-card__item">
+                  <p class="info-card__text">Банкомат №1</p>
+                  <p class="info-card__text">ул. Пушкина 32</p>
+                </li>
+              </ul>
+            </div>
+            <div class="about__place info-card">
+              <ul class="info-card__list">
+                <li class="info-card__item">
+                  <p class="info-card__text"><b>1 дол.</b></p>
+                  <p class="info-card__text">Покупка: 76 руб.</p>
+                  <p class="info-card__text">Продажа: 76 руб.</p>
+                </li>
+                <li class="info-card__item">
+                  <p class="info-card__text"><b>1 дол.</b></p>
+                  <p class="info-card__text">Покупка: 76 руб.</p>
+                  <p class="info-card__text">Продажа: 76 руб.</p>
+                </li>
+                <li class="info-card__item">
+                  <p class="info-card__text"><b>1 дол.</b></p>
+                  <p class="info-card__text">Покупка: 76 руб.</p>
+                  <p class="info-card__text">Продажа: 76 руб.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="about__products categories">
+          <p class="categories__title title">Лучшие предложения от банков</p>
+          <ul class="categories__list">
+            <li class="categories__item">
+              <a href="#" class="categories__inner">
+                <p class="categories__name">Вклады</p>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__inner">
+                <p class="categories__name">Кредиты</p>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__inner">
+                <p class="categories__name">Кредитные карты</p>
+              </a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__inner">
+                <p class="categories__name">Дебетовые карты</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="best-offer best-offer--hide">
+      <p class="best-offer__title title">Лучшие предложения от банков</p>
+      <div class="best-offer__inner tabs" data-tabs>
+        <ul class="best-offer__tabs tabs__list" data-controller="fw">
+          <li class="tabs__item tabs__item--active" data-tab="1"><button data-target="fw.item">Кредиты</button></li>
+          <li class="tabs__item" data-tab="2"><button data-target="fw.item">Займы</button></li>
+          <li class="tabs__item" data-tab="3"><button data-target="fw.item">Кредитные карты</button></li>
+          <li class="tabs__item" data-tab="4"><button data-target="fw.item">Ипотека</button></li>
+          <li class="tabs__item" data-tab="5"><button data-target="fw.item">Автокредиты</button></li>
+          <li class="tabs__item" data-tab="6"><button data-target="fw.item">Дебетовые карты</button></li>
+        </ul>
+        <div class="best-offer__content tabs__content tabs__content--active" data-content="1">
+          <ul class="best-offer__list">
+            <li class="best-offer__item offer">
+              <div class="offer__inner">
+                <picture class="offer__img">
+                  <source type="image/webp" srcset="img/otpbank@desktop.webp">
+                  <img width="240" height="76" src="img/otpbank@desktop.png" alt="otpbank">
+                </picture>
+                <p class="offer__desc">Кредит наличными</p>
+                <p class="offer__percent">от 8.99 до 12.99%</p>
+                <p class="offer__text">от 90 тыс. до 2 млн.</p>
+                <p class="offer__text">от 13 до 60 мес.</p>
+                <a href="" class="offer__button button">Подать заявку</a>
+              </div>
+            </li>
+            <li class="best-offer__item offer">
+              <div class="offer__inner">
+                <picture class="offer__img">
+                  <source type="image/webp" srcset="img/tinkoffbank@desktop.webp">
+                  <img width="201" height="78" src="img/tinkoffbank@desktop.png" alt="tinkoff">
+                </picture>
+                <p class="offer__desc">Кредит наличными</p>
+                <p class="offer__percent">от 8.99 до 12.99%</p>
+                <p class="offer__text">от 90 тыс. до 2 млн.</p>
+                <p class="offer__text">от 13 до 60 мес.</p>
+                <a href="" class="offer__button button">Подать заявку</a>
+              </div>
+            </li>
+            <li class="best-offer__item offer">
+              <div class="offer__inner">
+                <picture class="offer__img">
+                  <source type="image/webp" srcset="img/alfabank@dekstop.webp">
+                  <img width="256" height="101" src="img/alfabank@dekstop.png" alt="alfabank">
+                </picture>
+                <p class="offer__desc">Кредит наличными</p>
+                <p class="offer__percent">от 8.99 до 12.99%</p>
+                <p class="offer__text">от 90 тыс. до 2 млн.</p>
+                <p class="offer__text">от 13 до 60 мес.</p>
+                <a href="" class="offer__button button">Подать заявку</a>
+              </div>
+            </li>
+            <li class="best-offer__item offer">
+              <div class="offer__inner">
+                <picture class="offer__img">
+                  <source type="image/webp" srcset="img/russian-standart@desktop.webp">
+                  <img width="223" height="68" src="img/russian-standart@desktop.png" alt="russian">
+                </picture>
+                <p class="offer__desc">Кредит наличными</p>
+                <p class="offer__percent">от 8.99 до 12.99%</p>
+                <p class="offer__text">от 90 тыс. до 2 млн.</p>
+                <p class="offer__text">от 13 до 60 мес.</p>
+                <a href="" class="offer__button button">Подать заявку</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="best-offer__content tabs__content" data-content="2">
+          <ul class="best-offer__list">
+            <li class="best-offer__item offer">
+              <div class="offer__inner">
+                <picture class="offer__img">
+                  <source type="image/webp" srcset="img/otpbank@desktop.webp">
+                  <img width="240" height="76" src="img/otpbank@desktop.png" alt="otpbank">
+                </picture>
+                <p class="offer__desc">Кредит наличными</p>
+                <p class="offer__percent">от 8.99 до 12.99%</p>
+                <p class="offer__text">от 90 тыс. до 2 млн.</p>
+                <p class="offer__text">от 13 до 60 мес.</p>
+                <a href="" class="offer__button button">Подать заявку</a>
+              </div>
+            </li>
+            <li class="best-offer__item offer">
+              <div class="offer__inner">
+                <picture class="offer__img">
+                  <source type="image/webp" srcset="img/tinkoffbank@desktop.webp">
+                  <img width="201" height="78" src="img/tinkoffbank@desktop.png" alt="tinkoff">
+                </picture>
+                <p class="offer__desc">Кредит наличными</p>
+                <p class="offer__percent">от 8.99 до 12.99%</p>
+                <p class="offer__text">от 90 тыс. до 2 млн.</p>
+                <p class="offer__text">от 13 до 60 мес.</p>
+                <a href="" class="offer__button button">Подать заявку</a>
+              </div>
+            </li>
+            <li class="best-offer__item offer">
+              <div class="offer__inner">
+                <picture class="offer__img">
+                  <source type="image/webp" srcset="img/alfabank@dekstop.webp">
+                  <img width="256" height="101" src="img/alfabank@dekstop.png" alt="alfabank">
+                </picture>
+                <p class="offer__desc">Кредит наличными</p>
+                <p class="offer__percent">от 8.99 до 12.99%</p>
+                <p class="offer__text">от 90 тыс. до 2 млн.</p>
+                <p class="offer__text">от 13 до 60 мес.</p>
+                <a href="" class="offer__button button">Подать заявку</a>
+              </div>
+            </li>
+            <li class="best-offer__item offer">
+              <div class="offer__inner">
+                <picture class="offer__img">
+                  <source type="image/webp" srcset="img/russian-standart@desktop.webp">
+                  <img width="223" height="68" src="img/russian-standart@desktop.png" alt="russian">
+                </picture>
+                <p class="offer__desc">Кредит наличными</p>
+                <p class="offer__percent">от 8.99 до 12.99%</p>
+                <p class="offer__text">от 90 тыс. до 2 млн.</p>
+                <p class="offer__text">от 13 до 60 мес.</p>
+                <a href="" class="offer__button button">Подать заявку</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="" class="best-offer__more button button--thin">Все предложения</a>
+    </div>
+    <div class="partners" data-controller="partners">
+      <p class="partners__title title">Крупнейшие банки России</p>
+      <ul class="partners__list" data-target="partners.list">
+        <li class="partners__item">
+          <div class="partners__inner">
+            <picture class="partners__img">
+              <source type="image/webp" srcset="img/otpbank@desktop.webp">
+              <img width="240" height="76" src="img/otpbank@desktop.png" alt="otpbank">
+            </picture>
+          </div>
+        </li>
+        <li class="partners__item">
+          <div class="partners__inner">
+            <picture class="partners__img">
+              <source type="image/webp" srcset="img/unicredit@dekstop.webp">
+              <img width="232" height="68" src="img/unicredit@dekstop.png" alt="unicredit">
+            </picture>
+          </div>
+        </li>
+        <li class="partners__item">
+          <div class="partners__inner">
+            <picture class="partners__img">
+              <source type="image/webp" srcset="img/tinkoffbank@desktop.webp">
+              <img width="201" height="78" src="img/tinkoffbank@desktop.png" alt="tinkoff">
+            </picture>
+          </div>
+        </li>
+        <li class="partners__item">
+          <div class="partners__inner">
+            <picture class="partners__img">
+              <source type="image/webp" srcset="img/vost@desktop.webp">
+              <img width="241" height="135" src="img/vost@desktop.png" alt="vost">
+            </picture>
+          </div>
+        </li>
+        <li class="partners__item">
+          <div class="partners__inner">
+            <picture class="partners__img">
+              <source type="image/webp" srcset="img/vost@desktop.webp">
+              <img width="241" height="135" src="img/vost@desktop.png" alt="vost">
+            </picture>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="media">
+      <p class="media__title title">Новости банков</p>
+      <div class="media__tabs tabs tabs--accent" data-tabs>
+        <ul class="tabs__list">
+          <li class="tabs__item tabs__item--active" data-tab="1">Последние</li>
+          <li class="tabs__item" data-tab="2">Самые популярные</li>
+        </ul>
+        <div class="tabs__content tabs__content--active" data-content="1">
+          <ul class="media__list">
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="tabs__content" data-content="2">
+          <ul class="media__list">
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="" class="media__more button button--thin">Все новости</a>
+    </div>
+    <div class="media media--reviews">
+      <p class="media__title title">Отзывы</p>
+      <div class="media__tabs tabs tabs--accent" data-tabs>
+        <ul class="tabs__list">
+          <li class="tabs__item tabs__item--active" data-tab="1">Последние</li>
+          <li class="tabs__item" data-tab="2">Самые популярные</li>
+        </ul>
+        <div class="tabs__content tabs__content--active" data-content="1">
+          <div class="reviews">
+            <ul class="reviews__list">
+              <li class="reviews__item">
+                <div class="reviews__top">
+                  <div class="reviews__author">
+                    <img src="img/man.png" alt="man" class="reviews__img">
+                    <div class="reviews__info">
+                      <p class="reviews__name">Александр</p>
+                      <p class="reviews__location">Москва</p>
+                    </div>
+                  </div>
+                  <div class="reviews__rating">
+                    <p class="reviews__balls">4,7 балла из 5</p>
+                    <ul class="stars">
+                      <li class="stars__item"></li>
+                      <li class="stars__item"></li>
+                      <li class="stars__item"></li>
+                      <li class="stars__item"></li>
+                      <li class="stars__item"></li>
+                    </ul>
+                  </div>
+                  <picture class="reviews__logo">
+                    <source type="image/webp" srcset="img/tinkoffbank@desktop.webp">
+                    <img src="img/tinkoffbank@desktop.png" alt="tinkoff">
+                  </picture>
+                </div>
+                <div class="reviews__content">
+                  <span class="reviews__date">04.03.20</span>
+                  <p class="reviews__header">Кредит со страховкой</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+                </div>
+              </li>
+              <li class="reviews__item">
+                <div class="reviews__top">
+                  <div class="reviews__author">
+                    <img src="img/man.png" alt="man" class="reviews__img">
+                    <div class="reviews__info">
+                      <p class="reviews__name">Александр</p>
+                      <p class="reviews__location">Москва</p>
+                    </div>
+                  </div>
+                  <div class="reviews__rating">
+                    <p class="reviews__balls">4,7 балла из 5</p>
+                    <ul class="stars">
+                      <li class="stars__item"></li>
+                      <li class="stars__item"></li>
+                      <li class="stars__item"></li>
+                      <li class="stars__item"></li>
+                      <li class="stars__item"></li>
+                    </ul>
+                  </div>
+                  <picture class="reviews__logo">
+                    <source type="image/webp" srcset="img/tinkoffbank@desktop.webp">
+                    <img src="img/tinkoffbank@desktop.png" alt="tinkoff">
+                  </picture>
+                </div>
+                <div class="reviews__content">
+                  <span class="reviews__date">04.03.20</span>
+                  <p class="reviews__header">Кредит со страховкой</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tabs__content" data-content="2">
+          <ul class="media__list">
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__inner">
+                <picture class="media__img">
+                  <source type="image/webp" srcset="img/media.webp">
+                  <img width="301" height="232" src="img/media.png" alt="">
+                </picture>
+                <p class="media__header">Название новости</p>
+                <span class="media__date">19.12.2019</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="info__place info-card">
+        <ul class="info-card__list">
+          <li class="info-card__item">
+            <p class="info-card__text">Потребительские кредиты</p>
+            <p class="info-card__text">4</p>
+          </li>
+          <li class="info-card__item">
+            <p class="info-card__text">Вклады</p>
+            <p class="info-card__text">9</p>
+          </li>
+          <li class="info-card__item">
+            <p class="info-card__text">Кредитные карты</p>
+            <p class="info-card__text">1</p>
+          </li>
+          <li class="info-card__item">
+            <p class="info-card__text">Дебетовые карты</p>
+            <p class="info-card__text">21</p>
+          </li>
+        </ul>
+      </div>
+      <div class="info__place info-card">
+        <ul class="info-card__list">
+          <li class="info-card__item">
+            <p class="info-card__text">Финансовый рейтинг</p>
+            <p class="info-card__text">42 место</p>
+          </li>
+          <li class="info-card__item">
+            <p class="info-card__text">Народный рейтинг</p>
+            <p class="info-card__text">9 место</p>
+          </li>
+        </ul>
+      </div>
+      <div class="info__place info-card">
+        <ul class="info-card__list">
+          <li class="info-card__item">
+            <p class="info-card__text">Банкомат №1</p>
+            <p class="info-card__text">ул. Пушкина 32</p>
+          </li>
+          <li class="info-card__item">
+            <p class="info-card__text">Банкомат №1</p>
+            <p class="info-card__text">ул. Пушкина 32</p>
+          </li>
+          <li class="info-card__item">
+            <p class="info-card__text">Банкомат №1</p>
+            <p class="info-card__text">ул. Пушкина 32</p>
+          </li>
+          <li class="info-card__item">
+            <p class="info-card__text">Банкомат №1</p>
+            <p class="info-card__text">ул. Пушкина 32</p>
+          </li>
+        </ul>
+      </div>
+      <div class="info__place info-card">
+        <ul class="info-card__list">
+          <li class="info-card__item">
+            <p class="info-card__text">Офис №1</p>
+            <p class="info-card__text">ул. Пушкина 32</p>
+          </li>
+          <li class="info-card__item">
+            <p class="info-card__text">Офис №1</p>
+            <p class="info-card__text">ул. Пушкина 32</p>
+          </li>
+          <li class="info-card__item">
+            <p class="info-card__text">Офис №1</p>
+            <p class="info-card__text">ул. Пушкина 32</p>
+          </li>
+          <li class="info-card__item">
+            <p class="info-card__text">Офис №1</p>
+            <p class="info-card__text">ул. Пушкина 32</p>
+          </li>
+        </ul>
+      </div>
+      <div class="info__place info-card">
+        <ul class="info-card__list">
+          <li class="info-card__item">
+            <p class="info-card__text">Банкомат №1</p>
+            <p class="info-card__text">ул. Пушкина 32</p>
+          </li>
+          <li class="info-card__item">
+            <p class="info-card__text">Банкомат №1</p>
+            <p class="info-card__text">ул. Пушкина 32</p>
+          </li>
+          <li class="info-card__item">
+            <p class="info-card__text">Банкомат №1</p>
+            <p class="info-card__text">ул. Пушкина 32</p>
+          </li>
+          <li class="info-card__item">
+            <p class="info-card__text">Банкомат №1</p>
+            <p class="info-card__text">ул. Пушкина 32</p>
+          </li>
+        </ul>
+      </div>
+      <div class="info__place info-card">
+        <ul class="info-card__list">
+          <li class="info-card__item">
+            <p class="info-card__text"><b>1 дол.</b></p>
+            <p class="info-card__text">Покупка: 76 руб.</p>
+            <p class="info-card__text">Продажа: 76 руб.</p>
+          </li>
+          <li class="info-card__item">
+            <p class="info-card__text"><b>1 дол.</b></p>
+            <p class="info-card__text">Покупка: 76 руб.</p>
+            <p class="info-card__text">Продажа: 76 руб.</p>
+          </li>
+          <li class="info-card__item">
+            <p class="info-card__text"><b>1 дол.</b></p>
+            <p class="info-card__text">Покупка: 76 руб.</p>
+            <p class="info-card__text">Продажа: 76 руб.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <nav class="footer__nav">
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Кредиты</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Вклады</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Ипотека</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Кредитные карты</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Микрозаймы</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Стахование</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="footer__bottom">
+    <div class="footer__left">
+      <a href="#" class="footer__logo logo">
+        <picture class="logo__img">
+          <source type="image/webp" srcset="img/logo.webp">
+          <img width="145" src="img/logo.png" alt="logo">
+        </picture>
+      </a>
+      <p class="footer__copyright">© 2019 MirBanki.ru Все права защищены.</p>
+    </div>
+    <ul class="footer__list">
+      <li class="footer__item"><a href="">Главная</a></li>
+      <li class="footer__item"><a href="">Вклады</a></li>
+      <li class="footer__item"><a href="">Кредиты</a></li>
+      <li class="footer__item"><a href="">Ипотека</a></li>
+      <li class="footer__item"><a href="">Займы</a></li>
+      <li class="footer__item"><a href="">Карты</a></li>
+    </ul>
+    <div class="footer__subscribe subscribe">
+      <p class="subscribe__title">Подпишитесь на обновления</p>
+      <form action="#" class="subscribe__form">
+        <label>
+          <input type="text" class="subscribe__input" placeholder="Ваш E-mail">
+        </label>
+        <button class="subscribe__button">ПОДПИСАТЬСЯ</button>
+      </form>
+    </div>
+    <ul class="footer__social social">
+      <li class="social__item social__item--ok"><a href="#">Одноклассники</a></li>
+      <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
+      <li class="social__item social__item--vk"><a href="#">Vkontakte</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Персональный подбор кредита">
+  <meta name="keywords" content="key1, key2, key3">
+  <title>Персональный подбор кредита</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png" data-mce-href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png" data-mce-href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png" data-mce-href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png" data-mce-href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png" data-mce-href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png" data-mce-href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png" data-mce-href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png" data-mce-href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png" data-mce-href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32" data-mce-href="/favicon-32x32.png">
+<link rel="icon" type="image/png" href="img/favicons/android-chrome-192x192.png" sizes="192x192" data-mce-href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96" data-mce-href="/favicon-96x96.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16" data-mce-href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="img/favicons//mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/general.min.js" defer></script>
+  <link rel="preload" href="fonts/Gilroy-Bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Extrabold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Light.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Semibold.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<header class="header header--no-js">
+  <a href="#" class="header__logo logo">
+    <picture class="logo__img">
+      <source type="image/webp" srcset="img/logo.webp">
+      <img width="145" src="img/logo.png" alt="logo">
+    </picture>
+  </a>
+  <nav class="header__menu menu" data-controller="menu">
+    <button class="menu__burger burger burger" data-target="menu.burger">
+      <span class="burger__inner">Открыть меню</span>
+    </button>
+    <ul class="menu__list" data-target="menu.list">
+      <li class="menu__item"><a href="#">Главная</a></li>
+      <li class="menu__item menu__item--parent">
+        <p>
+          <a href="#">Вклады</a>
+          <svg width="6" height="11" data-target="menu.trigger">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow"></use>
+          </svg>
+        </p>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="#">Ссылка № 1</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 2</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 3</a></li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item--parent">
+        <p>
+          <a href="#">Кредиты</a>
+          <svg width="6" height="11" data-target="menu.trigger">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow"></use>
+          </svg>
+        </p>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="#">Ссылка № 1</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 2</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 3</a></li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item--parent">
+        <p>
+          <a href="#">Ипотека</a>
+          <svg width="6" height="11" data-target="menu.trigger">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow"></use>
+          </svg>
+        </p>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="#">Ссылка № 1</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 2</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 3</a></li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item--parent">
+        <p>
+          <a href="#">Займы</a>
+          <svg width="6" height="11" data-target="menu.trigger">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow"></use>
+          </svg>
+        </p>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="#">Ссылка № 1</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 2</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 3</a></li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item--parent">
+        <p>
+          <a href="#">Карты</a>
+          <svg width="6" height="11" data-target="menu.trigger">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow"></use>
+          </svg>
+        </p>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="#">Ссылка № 1</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 2</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <a href="#" class="header__location location">
+    <svg width="20" height="20">
+      <use xlink:href="img/sprites/sprite.svg#icon__pin"></use>
+    </svg>
+    <span>Россия</span>
+  </a>
+  <button class="header__search" aria-label="Поиск">
+    <svg width="20" height="20">
+      <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
+    </svg>
+  </button>
+</header>
+
+<main class="bg">
+  <div class="breadcrumbs">
+  <ul class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="#" itemprop="item">
+        <span itemprop="name">Главная</span>
+        <meta itemprop="position" content="1" />
+      </a>
+    </li>
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="#" itemprop="item">
+        <span itemprop="name">О банке</span>
+        <meta itemprop="position" content="2" />
+      </a>
+    </li>
+    <li class="breadcrumbs__item breadcrumbs__item--current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <div itemprop="item">
+        <span itemprop="name">Текущая страница</span>
+        <meta itemprop="position" content="3" />
+      </div>
+    </li>
+  </ul>
+</div>
+
+  <section class="result" data-controller="result">
+    <h1 class="result__title title">Поиск по запросу <span data-target="result.target">Премии</span></h1>
+    <p class="result__count" data-target="result.count">12 результатов</p>
+    <div class="result__box" data-target="result.item">
+      <p class="result__name name">Новости <sup>5</sup></p>
+      <ul class="result__list result__list--articles">
+        <li class="result__item article">
+          <span class="article__time">19:30</span>
+          <a href="" class="article__link">Россияне рассказали, на что потратят годовые премии авто</a>
+        </li>
+        <li class="result__item article">
+          <span class="article__time">19:30</span>
+          <a href="" class="article__link">Россияне рассказали, на что потратят автомобилей годовые премии</a>
+        </li>
+        <li class="result__item article">
+          <span class="article__time">19:30</span>
+          <a href="" class="article__link">Россияне рассказали, на что потратят годовые премии</a>
+        </li>
+        <li class="result__item article">
+          <span class="article__time">19:30</span>
+          <a href="" class="article__link">Россияне рассказали, на что потратят годовые премии</a>
+        </li>
+        <li class="result__item article">
+          <span class="article__time">19:30</span>
+          <a href="" class="article__link">Россияне рассказали, на что потратят годовые премии</a>
+        </li>
+      </ul>
+    </div>
+    <div class="result__box" data-target="result.item">
+      <p class="result__name name">Банки <sup>1</sup></p>
+      <ul class="result__list">
+        <li class="result__item bank-info">
+          <picture class="bank-info__img">
+            <source type="image/webp" srcset="img/tinkoffbank@desktop.webp">
+            <img src="img/tinkoffbank@desktop.png" alt="tinkoff">
+          </picture>
+          <div class="bank-info__content">
+            <div class="bank-info__top">
+              <div class="bank-info__body">
+                <p class="bank-info__name">БайкалИнвестБанк</p>
+                <div class="bank-info__row">
+                  <p class="bank-info__text">лицензия № 1067</p>
+                  <p class="bank-info__text"><span>53 место</span> по России</p>
+                </div>
+              </div>
+              <a href="+74999689423" class="bank-info__phone">+7 (499) 968-94-23</a>
+            </div>
+            <ul class="bank-info__list">
+              <li class="bank-info__item">Отделения <span>6726</span></li>
+              <li class="bank-info__item">Банкоматы <span>35</span></li>
+              <li class="bank-info__item">Вклады <span>325</span></li>
+              <li class="bank-info__item">Дебетовые карты <span>1325</span></li>
+              <li class="bank-info__item">Кредиты <span>125</span></li>
+              <li class="bank-info__item">Кредитные карты <span>7125</span></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="result__box" data-target="result.item">
+      <p class="result__name name">Продукты <sup>6</sup></p>
+      <ul class="result__list">
+        <li class="result__item product-card">
+          <picture class="product-card__img">
+            <source type="image/webp" srcset="img/tinkoffbank@desktop.webp">
+            <img src="img/tinkoffbank@desktop.png" alt="tinkoff">
+          </picture>
+          <div class="product-card__info">
+            <div class="product-card__rate">
+              <p class="product-card__text">от <b class="product-card__accent">8.99%</b></p>
+              <p class="product-card__text">“Легкий”</p>
+            </div>
+            <div class="product-card__payment">
+              <p class="product-card__text">от <b class="product-card__accent"> 4 500 Р/мес</b></p>
+              <p class="product-card__text">на 24 месяца </p>
+            </div>
+          </div>
+          <div class="product-card__docs">
+            <p class="product-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+          <div class="product-card__requirement">
+            <p class="product-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+          <div class="product-card__popular">
+            <p class="product-card__text">лицензия № 1067</p>
+            <div class="product-card__controls">
+              <a href="#" class="product-card__button button">Отправить заявку</a>
+              <a href="#" class="product-card__more">Подробнее</a>
+            </div>
+          </div>
+        </li>
+        <li class="result__item product-card">
+          <picture class="product-card__img">
+            <source type="image/webp" srcset="img/tinkoffbank@desktop.webp">
+            <img src="img/tinkoffbank@desktop.png" alt="tinkoff">
+          </picture>
+          <div class="product-card__info">
+            <div class="product-card__rate">
+              <p class="product-card__text">от <b class="product-card__accent">8.99%</b></p>
+              <p class="product-card__text">“Легкий”</p>
+            </div>
+            <div class="product-card__payment">
+              <p class="product-card__text">от <b class="product-card__accent"> 4 500 Р/мес</b></p>
+              <p class="product-card__text">на 24 месяца </p>
+            </div>
+          </div>
+          <div class="product-card__docs">
+            <p class="product-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+          <div class="product-card__requirement">
+            <p class="product-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+          <div class="product-card__popular">
+            <p class="product-card__text">лицензия № 1067</p>
+            <div class="product-card__controls">
+              <a href="#" class="product-card__button button">Отправить заявку</a>
+              <a href="#" class="product-card__more">Подробнее</a>
+            </div>
+          </div>
+        </li>
+        <li class="result__item product-card">
+          <picture class="product-card__img">
+            <source type="image/webp" srcset="img/tinkoffbank@desktop.webp">
+            <img src="img/tinkoffbank@desktop.png" alt="tinkoff">
+          </picture>
+          <div class="product-card__info">
+            <div class="product-card__rate">
+              <p class="product-card__text">от <b class="product-card__accent">8.99%</b></p>
+              <p class="product-card__text">“Легкий”</p>
+            </div>
+            <div class="product-card__payment">
+              <p class="product-card__text">от <b class="product-card__accent"> 4 500 Р/мес</b></p>
+              <p class="product-card__text">на 24 месяца </p>
+            </div>
+          </div>
+          <div class="product-card__docs">
+            <p class="product-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+          <div class="product-card__requirement">
+            <p class="product-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+          <div class="product-card__popular">
+            <p class="product-card__text">лицензия № 1067</p>
+            <div class="product-card__controls">
+              <a href="#" class="product-card__button button">Отправить заявку</a>
+              <a href="#" class="product-card__more">Подробнее</a>
+            </div>
+          </div>
+        </li>
+        <li class="result__item product-card">
+          <picture class="product-card__img">
+            <source type="image/webp" srcset="img/tinkoffbank@desktop.webp">
+            <img src="img/tinkoffbank@desktop.png" alt="tinkoff">
+          </picture>
+          <div class="product-card__info">
+            <div class="product-card__rate">
+              <p class="product-card__text">от <b class="product-card__accent">8.99%</b></p>
+              <p class="product-card__text">“Легкий”</p>
+            </div>
+            <div class="product-card__payment">
+              <p class="product-card__text">от <b class="product-card__accent"> 4 500 Р/мес</b></p>
+              <p class="product-card__text">на 24 месяца </p>
+            </div>
+          </div>
+          <div class="product-card__docs">
+            <p class="product-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+          <div class="product-card__requirement">
+            <p class="product-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+          <div class="product-card__popular">
+            <p class="product-card__text">лицензия № 1067</p>
+            <div class="product-card__controls">
+              <a href="#" class="product-card__button button">Отправить заявку</a>
+              <a href="#" class="product-card__more">Подробнее</a>
+            </div>
+          </div>
+        </li>
+        <li class="result__item product-card">
+          <picture class="product-card__img">
+            <source type="image/webp" srcset="img/tinkoffbank@desktop.webp">
+            <img src="img/tinkoffbank@desktop.png" alt="tinkoff">
+          </picture>
+          <div class="product-card__info">
+            <div class="product-card__rate">
+              <p class="product-card__text">от <b class="product-card__accent">8.99%</b></p>
+              <p class="product-card__text">“Легкий”</p>
+            </div>
+            <div class="product-card__payment">
+              <p class="product-card__text">от <b class="product-card__accent"> 4 500 Р/мес</b></p>
+              <p class="product-card__text">на 24 месяца </p>
+            </div>
+          </div>
+          <div class="product-card__docs">
+            <p class="product-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+          <div class="product-card__requirement">
+            <p class="product-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+          <div class="product-card__popular">
+            <p class="product-card__text">лицензия № 1067</p>
+            <div class="product-card__controls">
+              <a href="#" class="product-card__button button">Отправить заявку</a>
+              <a href="#" class="product-card__more">Подробнее</a>
+            </div>
+          </div>
+        </li>
+        <li class="result__item product-card">
+          <picture class="product-card__img">
+            <source type="image/webp" srcset="img/tinkoffbank@desktop.webp">
+            <img src="img/tinkoffbank@desktop.png" alt="tinkoff">
+          </picture>
+          <div class="product-card__info">
+            <div class="product-card__rate">
+              <p class="product-card__text">от <b class="product-card__accent">8.99%</b></p>
+              <p class="product-card__text">“Легкий”</p>
+            </div>
+            <div class="product-card__payment">
+              <p class="product-card__text">от <b class="product-card__accent"> 4 500 Р/мес</b></p>
+              <p class="product-card__text">на 24 месяца </p>
+            </div>
+          </div>
+          <div class="product-card__docs">
+            <p class="product-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+          <div class="product-card__requirement">
+            <p class="product-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+          <div class="product-card__popular">
+            <p class="product-card__text">лицензия № 1067</p>
+            <div class="product-card__controls">
+              <a href="#" class="product-card__button button">Отправить заявку</a>
+              <a href="#" class="product-card__more">Подробнее</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <nav class="footer__nav">
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Кредиты</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Вклады</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Ипотека</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Кредитные карты</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Микрозаймы</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Стахование</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="footer__bottom">
+    <div class="footer__left">
+      <a href="#" class="footer__logo logo">
+        <picture class="logo__img">
+          <source type="image/webp" srcset="img/logo.webp">
+          <img width="145" src="img/logo.png" alt="logo">
+        </picture>
+      </a>
+      <p class="footer__copyright">© 2019 MirBanki.ru Все права защищены.</p>
+    </div>
+    <ul class="footer__list">
+      <li class="footer__item"><a href="">Главная</a></li>
+      <li class="footer__item"><a href="">Вклады</a></li>
+      <li class="footer__item"><a href="">Кредиты</a></li>
+      <li class="footer__item"><a href="">Ипотека</a></li>
+      <li class="footer__item"><a href="">Займы</a></li>
+      <li class="footer__item"><a href="">Карты</a></li>
+    </ul>
+    <div class="footer__subscribe subscribe">
+      <p class="subscribe__title">Подпишитесь на обновления</p>
+      <form action="#" class="subscribe__form">
+        <label>
+          <input type="text" class="subscribe__input" placeholder="Ваш E-mail">
+        </label>
+        <button class="subscribe__button">ПОДПИСАТЬСЯ</button>
+      </form>
+    </div>
+    <ul class="footer__social social">
+      <li class="social__item social__item--ok"><a href="#">Одноклассники</a></li>
+      <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
+      <li class="social__item social__item--vk"><a href="#">Vkontakte</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

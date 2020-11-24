@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Персональный подбор кредита">
+  <meta name="keywords" content="key1, key2, key3">
+  <title>Персональный подбор кредита</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png" data-mce-href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png" data-mce-href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png" data-mce-href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png" data-mce-href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png" data-mce-href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png" data-mce-href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png" data-mce-href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png" data-mce-href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png" data-mce-href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32" data-mce-href="/favicon-32x32.png">
+<link rel="icon" type="image/png" href="img/favicons/android-chrome-192x192.png" sizes="192x192" data-mce-href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96" data-mce-href="/favicon-96x96.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16" data-mce-href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="img/favicons//mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/general.min.js" defer></script>
+  <link rel="preload" href="fonts/Gilroy-Bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Extrabold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Light.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Semibold.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<header class="header header--no-js">
+  <a href="#" class="header__logo logo">
+    <picture class="logo__img">
+      <source type="image/webp" srcset="img/logo.webp">
+      <img width="145" src="img/logo.png" alt="logo">
+    </picture>
+  </a>
+  <nav class="header__menu menu" data-controller="menu">
+    <button class="menu__burger burger burger" data-target="menu.burger">
+      <span class="burger__inner">Открыть меню</span>
+    </button>
+    <ul class="menu__list" data-target="menu.list">
+      <li class="menu__item"><a href="#">Главная</a></li>
+      <li class="menu__item menu__item--parent">
+        <p>
+          <a href="#">Вклады</a>
+          <svg width="6" height="11" data-target="menu.trigger">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow"></use>
+          </svg>
+        </p>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="#">Ссылка № 1</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 2</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 3</a></li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item--parent">
+        <p>
+          <a href="#">Кредиты</a>
+          <svg width="6" height="11" data-target="menu.trigger">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow"></use>
+          </svg>
+        </p>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="#">Ссылка № 1</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 2</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 3</a></li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item--parent">
+        <p>
+          <a href="#">Ипотека</a>
+          <svg width="6" height="11" data-target="menu.trigger">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow"></use>
+          </svg>
+        </p>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="#">Ссылка № 1</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 2</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 3</a></li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item--parent">
+        <p>
+          <a href="#">Займы</a>
+          <svg width="6" height="11" data-target="menu.trigger">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow"></use>
+          </svg>
+        </p>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="#">Ссылка № 1</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 2</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 3</a></li>
+        </ul>
+      </li>
+      <li class="menu__item menu__item--parent">
+        <p>
+          <a href="#">Карты</a>
+          <svg width="6" height="11" data-target="menu.trigger">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow"></use>
+          </svg>
+        </p>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="#">Ссылка № 1</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 2</a></li>
+          <li class="menu__sub-item"><a href="#">Ссылка № 3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <a href="#" class="header__location location">
+    <svg width="20" height="20">
+      <use xlink:href="img/sprites/sprite.svg#icon__pin"></use>
+    </svg>
+    <span>Россия</span>
+  </a>
+  <button class="header__search" aria-label="Поиск">
+    <svg width="20" height="20">
+      <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
+    </svg>
+  </button>
+</header>
+
+<main>
+  <div class="bg">
+    <div class="breadcrumbs">
+  <ul class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="#" itemprop="item">
+        <span itemprop="name">Главная</span>
+        <meta itemprop="position" content="1" />
+      </a>
+    </li>
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="#" itemprop="item">
+        <span itemprop="name">О банке</span>
+        <meta itemprop="position" content="2" />
+      </a>
+    </li>
+    <li class="breadcrumbs__item breadcrumbs__item--current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <div itemprop="item">
+        <span itemprop="name">Текущая страница</span>
+        <meta itemprop="position" content="3" />
+      </div>
+    </li>
+  </ul>
+</div>
+
+    <section class="news">
+      <h1 class="news__title title">Новости рынка и банков</h1>
+      <div class="news__inner">
+        <div class="news__left">
+          <ul class="news__categories">
+            <li class="news__category news__category--active"><a href="#">Все новости</a></li>
+            <li class="news__category"><a href="#">Курс валюты</a></li>
+            <li class="news__category"><a href="#">США</a></li>
+            <li class="news__category"><a href="#">Актуальное</a></li>
+            <li class="news__category"><a href="#">Кредитные карты</a></li>
+          </ul>
+          <ul class="news__filters">
+            <li class="news__filter news__filter--active"><a href="#">Последние</a></li>
+            <li class="news__filter"><a href="#">Популярные</a></li>
+            <li class="news__filter">
+              <select class="selection__select select" data-controller="select">
+                <option value="Все авторы">Все авторы</option>
+                <option value="Один автор">Один автор</option>
+                <option value="Два автора">Два автора</option>
+              </select>
+            </li>
+            <li class="news__filter">
+              <select class="selection__select select" data-controller="select">
+                <option value="Все материалы">Все материалы</option>
+                <option value="Один автор">Один автор</option>
+                <option value="Два автора">Два автора</option>
+              </select>
+            </li>
+          </ul>
+          <div class="news__block">
+            <ul class="news__list">
+              <li class="news__item">
+                <a href="#">
+                  <div class="news__img-wrapper">
+                    <picture class="news__img">
+                      <source type="image/webp" media="(min-width: 600px)" srcset="img/news@desktop.webp">
+                      <source media="(min-width: 600px)" srcset="img/news@desktop.jpg">
+                      <source type="image/webp" srcset="img/news@mobile.webp">
+                      <img src="img/news@mobile.jpg" alt="news">
+                    </picture>
+                  </div>
+                  <div class="news__body">
+                    <p class="news__name">Как взять авто в лизинг: пошаговая инструкция</p>
+                    <span class="news__date">19.12.2019</span>
+                  </div>
+                </a>
+              </li>
+              <li class="news__item">
+                <a href="#">
+                  <div class="news__img-wrapper">
+                    <picture class="news__img">
+                      <source type="image/webp" media="(min-width: 600px)" srcset="img/news@desktop.webp">
+                      <source media="(min-width: 600px)" srcset="img/news@desktop.jpg">
+                      <source type="image/webp" srcset="img/news@mobile.webp">
+                      <img src="img/news@mobile.jpg" alt="news">
+                    </picture>
+                  </div>
+                  <div class="news__body">
+                    <p class="news__name">Как взять авто в лизинг: пошаговая инструкция</p>
+                    <span class="news__date">19.12.2019</span>
+                  </div>
+                </a>
+              </li>
+              <li class="news__item">
+                <a href="#">
+                  <div class="news__img-wrapper">
+                    <picture class="news__img">
+                      <source type="image/webp" media="(min-width: 600px)" srcset="img/news@desktop.webp">
+                      <source media="(min-width: 600px)" srcset="img/news@desktop.jpg">
+                      <source type="image/webp" srcset="img/news@mobile.webp">
+                      <img src="img/news@mobile.jpg" alt="news">
+                    </picture>
+                  </div>
+                  <div class="news__body">
+                    <p class="news__name">Как взять авто в лизинг: пошаговая инструкция</p>
+                    <span class="news__date">19.12.2019</span>
+                  </div>
+                </a>
+              </li>
+              <li class="news__item">
+                <a href="#">
+                  <div class="news__img-wrapper">
+                    <picture class="news__img">
+                      <source type="image/webp" media="(min-width: 600px)" srcset="img/news@desktop.webp">
+                      <source media="(min-width: 600px)" srcset="img/news@desktop.jpg">
+                      <source type="image/webp" srcset="img/news@mobile.webp">
+                      <img src="img/news@mobile.jpg" alt="news">
+                    </picture>
+                  </div>
+                  <div class="news__body">
+                    <p class="news__name">Как взять авто в лизинг: пошаговая инструкция</p>
+                    <span class="news__date">19.12.2019</span>
+                  </div>
+                </a>
+              </li>
+              <li class="news__item">
+                <a href="#">
+                  <div class="news__img-wrapper">
+                    <picture class="news__img">
+                      <source type="image/webp" media="(min-width: 600px)" srcset="img/news@desktop.webp">
+                      <source media="(min-width: 600px)" srcset="img/news@desktop.jpg">
+                      <source type="image/webp" srcset="img/news@mobile.webp">
+                      <img src="img/news@mobile.jpg" alt="news">
+                    </picture>
+                  </div>
+                  <div class="news__body">
+                    <p class="news__name">Как взять авто в лизинг: пошаговая инструкция</p>
+                    <span class="news__date">19.12.2019</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="news__more button button--accent">Все новости</a>
+            <ul class="news__articles">
+              <li class="news__article article">
+                <span class="article__time">19:30</span>
+                <a href="" class="article__link">Россияне рассказали, на что потратят годовые премии</a>
+              </li>
+              <li class="news__article article">
+                <span class="article__time">19:30</span>
+                <a href="" class="article__link">Россияне рассказали, на что потратят годовые премии</a>
+              </li>
+              <li class="news__article article">
+                <span class="article__time">19:30</span>
+                <a href="" class="article__link">Россияне рассказали, на что потратят годовые премии</a>
+              </li>
+              <li class="news__article article">
+                <span class="article__time">19:30</span>
+                <a href="" class="article__link">Россияне рассказали, на что потратят годовые премии</a>
+              </li>
+              <li class="news__article article">
+                <span class="article__time">19:30</span>
+                <a href="" class="article__link">Россияне рассказали, на что потратят годовые премии</a>
+              </li>
+            </ul>
+          </div>
+          <div class="subscribe-form">
+            <p class="subscribe-form__title">Подпишитесь на нашу рассылку,<br> чтобы быть в курсе новостей</p>
+            <form action="#" class="subscribe-form__form">
+              <div class="subscribe-form__row">
+                <input type="email" class="subscribe-form__input" placeholder="Введите почту">
+                <button class="subscribe-form__button">Подписаться</button>
+              </div>
+              <label class="subscribe-form__label">
+                <input type="checkbox" checked>
+                <span class="subscribe-form__checkbox"></span>
+                <span class="subscribe-form__text">Я соглашаюсь с Условиями передачи данных и подтверждаю свое согласие на получение информационных рассылок от MirBanki на указаный мною e-mail</span>
+              </label>
+            </form>
+          </div>
+        </div>
+        <div class="news__right">
+          <div class="news__place place">
+            <p class="place__title name">Курсы валют</p>
+            <ul class="place__list">
+              <li class="place__item">Курсы валют 20 декабря: доллар – 62.5283, евро – 69.5877</li>
+              <li class="place__item">Курсы валют 20 декабря: доллар – 62.5283, евро – 69.5877</li>
+              <li class="place__item"><a href="#">Курсы валют 20 декабря: доллар – 62.5283, евро – 69.5877</a></li>
+            </ul>
+          </div>
+          <div class="news__place place">
+            <p class="place__title name">Пресс-релизы</p>
+            <ul class="place__list">
+              <li class="place__item"><a href="#">Курсы валют 20 декабря: доллар – 62.5283, евро – 69.5877</a></li>
+              <li class="place__item"><a href="#">Курсы валют 20 декабря: доллар – 62.5283, евро – 69.5877</a></li>
+              <li class="place__item"><a href="#">Курсы валют 20 декабря: доллар – 62.5283, евро – 69.5877</a></li>
+            </ul>
+          </div>
+          <div class="news__place place">
+            <p class="place__title name">Актуальное</p>
+            <ul class="place__list">
+              <li class="place__item"><a href="#">Цены на авиаперелёты вырастут в начале 2020 года </a></li>
+              <li class="place__item"><a href="#">Родители поделились, что чаще всего их дети просят подарить на Новый год</a></li>
+              <li class="place__item"><a href="#">Доллару предсказали обвал в начале 2020 года</a></li>
+              <li class="place__item"><a href="#">Россияне планируют потратить на Новый год 19,3 тысячи ₽ </a></li>
+              <li class="place__item"><a href="#">Стать самозанятыми смогут жители ещё 19 регионов </a></li>
+              <li class="place__item"><a href="#">Курсы валют 19 декабря: доллар – 62.5831, евро – 69.6925 </a></li>
+              <li class="place__item"><a href="#">Россияне планируют потратить на Новый год 19,3 тысячи ₽ </a></li>
+              <li class="place__item"><a href="#">Доллару предсказали обвал в начале 2020 года</a></li>
+            </ul>
+          </div>
+          <div class="news__place place">
+            <p class="place__title name">Офисы</p>
+            <ul class="place__list">
+              <li class="place__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</li>
+              <li class="place__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</li>
+            </ul>
+            <p class="place__title name">Банкоматы</p>
+            <ul class="place__list">
+              <li class="place__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</li>
+              <li class="place__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</li>
+            </ul>
+            <p class="place__title name">Отделения</p>
+            <ul class="place__list">
+              <li class="place__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</li>
+              <li class="place__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="news__rate rate">
+    <div class="rate__top">
+      <p class="rate__title name">Курсы валют</p>
+      <span class="rate__time">14:00</span>
+    </div>
+    <div class="rate__table">
+      <div class="rate__heading">
+        <span class="rate__empty"></span>
+        <span class="rate__head">ПОК.</span>
+        <span class="rate__head">ПРОД.</span>
+        <span class="rate__head">ЦБРФ.</span>
+      </div>
+      <div class="rate__row">
+        <span class="rate__accent">USD</span>
+        <span class="rate__text">62.66</span>
+        <span class="rate__text">62.66</span>
+        <span class="rate__text">62.66</span>
+      </div>
+      <div class="rate__row">
+        <span class="rate__accent">EUR</span>
+        <span class="rate__text">69.66</span>
+        <span class="rate__text">69.66</span>
+        <span class="rate__text">69.66</span>
+      </div>
+      <div class="rate__row">
+        <span class="rate__accent">KZT100</span>
+        <span class="rate__text">13.66</span>
+        <span class="rate__text">13.66</span>
+        <span class="rate__text">13.66</span>
+      </div>
+    </div>
+    <a href="#" class="rate__button button">Все валюты</a>
+  </div>
+  <div class="media">
+    <p class="media__title title">Популярное</p>
+    <ul class="media__list">
+      <li class="media__item">
+        <a href="#" class="media__inner">
+          <picture class="media__img">
+            <source type="image/webp" srcset="img/media.webp">
+            <img width="301" height="232" src="img/media.png" alt="">
+          </picture>
+          <p class="media__header">Название новости</p>
+          <span class="media__date">19.12.2019</span>
+        </a>
+      </li>
+      <li class="media__item">
+        <a href="#" class="media__inner">
+          <picture class="media__img">
+            <source type="image/webp" srcset="img/media.webp">
+            <img width="301" height="232" src="img/media.png" alt="">
+          </picture>
+          <p class="media__header">Название новости</p>
+          <span class="media__date">19.12.2019</span>
+        </a>
+      </li>
+      <li class="media__item">
+        <a href="#" class="media__inner">
+          <picture class="media__img">
+            <source type="image/webp" srcset="img/media.webp">
+            <img width="301" height="232" src="img/media.png" alt="">
+          </picture>
+          <p class="media__header">Название новости</p>
+          <span class="media__date">19.12.2019</span>
+        </a>
+      </li>
+      <li class="media__item">
+        <a href="#" class="media__inner">
+          <picture class="media__img">
+            <source type="image/webp" srcset="img/media.webp">
+            <img width="301" height="232" src="img/media.png" alt="">
+          </picture>
+          <p class="media__header">Название новости</p>
+          <span class="media__date">19.12.2019</span>
+        </a>
+      </li>
+      <li class="media__item">
+        <a href="#" class="media__inner">
+          <picture class="media__img">
+            <source type="image/webp" srcset="img/media.webp">
+            <img width="301" height="232" src="img/media.png" alt="">
+          </picture>
+          <p class="media__header">Название новости</p>
+          <span class="media__date">19.12.2019</span>
+        </a>
+      </li>
+      <li class="media__item">
+        <a href="#" class="media__inner">
+          <picture class="media__img">
+            <source type="image/webp" srcset="img/media.webp">
+            <img width="301" height="232" src="img/media.png" alt="">
+          </picture>
+          <p class="media__header">Название новости</p>
+          <span class="media__date">19.12.2019</span>
+        </a>
+      </li>
+    </ul>
+    <a href="" class="media__more button button--thin button--accent-thin">Все новости</a>
+  </div>
+</main>
+<footer class="footer">
+  <nav class="footer__nav">
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Кредиты</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Вклады</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Ипотека</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Кредитные карты</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Микрозаймы</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <a href="#" class="footer__cats">Стахование</a>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="">Главная</a></li>
+        <li class="footer__item"><a href="">Вклады</a></li>
+        <li class="footer__item"><a href="">Кредиты</a></li>
+        <li class="footer__item"><a href="">Ипотека</a></li>
+        <li class="footer__item"><a href="">Займы</a></li>
+        <li class="footer__item"><a href="">Карты</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="footer__bottom">
+    <div class="footer__left">
+      <a href="#" class="footer__logo logo">
+        <picture class="logo__img">
+          <source type="image/webp" srcset="img/logo.webp">
+          <img width="145" src="img/logo.png" alt="logo">
+        </picture>
+      </a>
+      <p class="footer__copyright">© 2019 MirBanki.ru Все права защищены.</p>
+    </div>
+    <ul class="footer__list">
+      <li class="footer__item"><a href="">Главная</a></li>
+      <li class="footer__item"><a href="">Вклады</a></li>
+      <li class="footer__item"><a href="">Кредиты</a></li>
+      <li class="footer__item"><a href="">Ипотека</a></li>
+      <li class="footer__item"><a href="">Займы</a></li>
+      <li class="footer__item"><a href="">Карты</a></li>
+    </ul>
+    <div class="footer__subscribe subscribe">
+      <p class="subscribe__title">Подпишитесь на обновления</p>
+      <form action="#" class="subscribe__form">
+        <label>
+          <input type="text" class="subscribe__input" placeholder="Ваш E-mail">
+        </label>
+        <button class="subscribe__button">ПОДПИСАТЬСЯ</button>
+      </form>
+    </div>
+    <ul class="footer__social social">
+      <li class="social__item social__item--ok"><a href="#">Одноклассники</a></li>
+      <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
+      <li class="social__item social__item--vk"><a href="#">Vkontakte</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
